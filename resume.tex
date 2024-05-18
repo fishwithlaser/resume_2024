@@ -1,0 +1,310 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+
+\title{Thomas Jaroslaw Resume}
+\author{Thomas Kosciuch}
+\date{\today} % This inserts today's date
+
+\setmainfont{Cheltenham}[
+    Path = ./cheltenham/,
+    Extension = .otf,
+    UprightFont = *StdLight,
+    BoldFont = *StdBold,
+    BoldItalicFont = *StdBoldItalic,
+    FontFace = {l}{n}{*StdLight},
+    FontFace = {l}{it}{*StdLightItalic}
+]
+
+\newfontfamily\CheltenhamRegular{Cheltenham-Regular}[
+    Path = ./cheltenham/,
+    Extension = .otf,
+]
+
+\pagenumbering{gobble}
+\newfontfamily{\chomsky}{Chomsky}[
+    Path = ./chomsky/,
+    Extension = .otf,
+    UprightFont = chomsky,
+]
+
+\geometry{margin=0.5in}
+
+\begin{document}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l>{\centering\arraybackslash}Xr}
+        \raggedright 
+        \begin{tabular}{@{}l@{}}
+            c: (437) 345 2016 \\
+            e: thomas@kosciuch.ca 
+        \end{tabular}
+        &
+        {\chomsky\huge Thomas Jarosław Kosciuch}
+        &
+        \raggedleft
+        \begin{tabular}{@{}l@{}}
+            5301-30 Shore Breeze Dr.\\
+            Toronto, ON, M8V 0J1 Canada
+        \end{tabular}
+    \end{tabularx}    
+    \hrule
+    \vspace{1.5em}
+
+    \centering
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Staff Engineer} (\textbf{\large QWealth}) & \raggedleft Toronto, ON & 2023-06 - current\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright \small   \textbf{Lead Integrations}\\
+        \small - Lead Docusign Integrations, including the development of Automated Account Opening and Trading Agreements.\\
+        \small - Introduced and built custom Github and Slack integrations for deployment and reporting.\\
+        \small - Built PDF Engines with Microsoft Graph for hedge fund and individuals' performance.\\
+        \small - Responsible for building DataDog integrations, and migration to prometheus and graphana migration.\\
+        \vspace{0.5em}
+        \textbf{Mentorship \& Leadership}\\
+        \small - Transformed the least performing engineer (inherited from the front-end team) into a recipient of 'Outstanding' performance evaluations.\\
+        \small - Matured organization's development practices (e.g., encouraged good use of git; widespread use of typing and comments; Jira Tickets and weighting; in- and out of code document).\\
+        \small - Improved inter-team integration through fitness challenges and ridiculous contests (e.g., Government Form Trivia Night). \\
+        \small - Lead meetings on how to convert ideas into infrastructure, code and database structures. \\
+        \vspace{0.5em}
+        \textbf{Lead Infrastructure development}\\
+        \small - Started a culture of development that starts with RFCs. \\
+        \small - Force infrasructure development through infrasructure-as-code (AWS CDK; docker-compose; etc.) \\
+        \small - Built a number of frameworks and templates (example: EC2 Stack; Lambda-Dynamo Stack)
+
+        % AWS CDK; 
+        % - EC2 Builds (VPCs, AIM)
+        % - Lambdas Builds
+        % - Athena Builds
+        % - Dynamo
+        % - Graphana and Prometheus
+        % - Authentication
+        % - Caching
+        % - Deploy Scripts
+        % - Docker
+        % - trials (e.g. datadog)
+
+    \end{tabular*}
+
+% \end{table}
+% \begin{table}[h]
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Senior Backend Engineer} (\textbf{\large QWealth}) & \raggedleft Toronto, ON & 2022-06 - 2023-06\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright    \textbf{Integrations}\\
+        \small - Built a lot of integrations (e.g, MX, Wealthscope, D1g1t, Conquest, Salesforce).\\
+        \small - Developed our testing framework (equipped with integration, unit, and load tests)\\
+        \small - Implemented Sentry for immediate resolving of errors.\\
+        \textbf{API Development}\\
+        \small - Expanded API to enable graph-like interfacing with data objects\\
+        \small - Upgraded APIs and databases to use up-to-date frameworks\\
+        \textbf{Data Engineering}\\
+        \small - Built various data loading and processing jobs from various SFTP servers into our local databases (AWS Glue / Athena / RDS / DynamoDb).\\
+        \textbf{Security}\\
+        \small - Enabled data encryption at rest; locked down permssions via AIM/security groups and IP restrictions; expanded AWS services to preferentialy use internal routing.\\
+    \end{tabular*}
+
+% \end{table}
+% \begin{table}[h]
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Software Engineer} (\textbf{\Large Adaptavist}) & \raggedleft Toronto, ON  & 2020-06 - 2022-06\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+    \raggedright
+    \small - Helped onboard and mentored a junior engineers\\
+    \small - Contributed to internal serverless Slack App- framework\\
+    \small - Designed testing framework used by back-end engineers\\
+    \end{tabular*}
+
+% \end{table}
+% \begin{table}[h]
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Software Developer} (\textbf{\Large Jam Direct}) & \raggedleft Toronto, ON  & 2019-03 - 2018-09\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright\textbf{Leadership}\\
+        \small - Lead 3-5 junior developers; guided personal development and progress reviews.\\
+        \small - Involved in hiring, conducting technical reviews and project-design and delegation.\\
+        \textbf{Systems Design}\\
+        \small - Designed and created architecture for a data manipulation platform saving several \$100,000s for previously-outsourced processing.\\
+        \small - Enabled company-wide user authentication (SSO) across our internal apps.\\
+    \end{tabular*}
+
+% \end{table}
+% \begin{table}[h]
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Research Fellow} (\textbf{\Large University of Toronto}) & \raggedleft Toronto, ON  & 2018-09 - 2019-03\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+    \raggedright 
+    \small - Developed software to model fluid and heat transfer (computational fluid dynamics).\\
+    \small - Attempted to solve a long-standing problem in statistical thermodynamics and nucleation.\\ 
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{CoOwner} (\textbf{\Large KAT Reit}) & \raggedleft Toronto, ON  & 2018-09 - 2019-03\\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+    \small - Own and manage a few rental properties with some friends Kassandra+Alysha+Thomas = KAT.\\
+    \small - Build software to analyze building permits to inform puchasing decisions.\\ 
+    \end{tabular*}
+
+\end{table}
+
+\hrule
+\begin{table}[h]
+    \hrule
+    \vspace{1em}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.5\textwidth}p{0.3\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Publications} \small NASA Stennis Space Center& \raggedleft    &  \\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        % profile: https://scholar.google.ca/citations?user=Z2Z6kqIAAAAJ&hl=en&oi=ao
+        \small - Foraminifera reveal a shallow nearshore origin for overwash sediments deposited by Tropical Cyclone Pam in Vanuatu (South Pacific)\\
+        TJ Kosciuch, JE Pilarczyk, I Hong, HM Fritz, BP Horton… - Marine Geology, 2018\\
+        \small - Sedimentological characteristics of the 2015 tropical cyclone Pam overwash sediments from Vanuatu, South Pacific\\
+        I Hong, JE Pilarczyk, BP Horton, HM Fritz, TJ Kosciuch… - Marine Geology, 2018\\      
+    \end{tabular*}
+\end{table}
+
+
+\begin{table}[h]
+    \hrule
+    \vspace{1em}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.4\textwidth}p{0.4\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Awards} \\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.35\textwidth}p{0.45\textwidth}p{0.2\textwidth}}
+        % profile: https://scholar.google.ca/citations?user=Z2Z6kqIAAAAJ&hl=en&oi=ao
+         \footnotesize - NSERC PSD-G &\footnotesize NSERC (University of Toronto) & 69000 CAD \\
+         \footnotesize - Student Oral Presentation - 1st place	Rockfest  &\footnotesize University of Toronto & 100 CAD \\
+         \footnotesize - Faculty of Art and Science Top Doctoral Fellowship &\footnotesize Faculty of Art and Science, University of Toronto & 133756 CAD \\
+         \footnotesize - Student Travel Bursary	UNESCO IGCP 639 &\footnotesize UNESCO & 350 USD \\
+         \footnotesize - Student Travel Award Cushman Foundation &\footnotesize Cushman Foundation & 2046 USD \\
+         \footnotesize - Marine Science Scholar	Division of Marine Science &\footnotesize School of Ocean Science and Tech. at NASA Stennis Space Center & 45427 USD \\
+         \footnotesize - Outstanding Student Scholarship &\footnotesize School of Ocean Science and Tech. at NASA Stennis Space Center & 1303 USD \\ 
+         \footnotesize - Student Chapter of the Year (President) &\footnotesize Marine Technology Society & 0 USD \\
+         \footnotesize - Student Chapter of the Year (Treasurer) &\footnotesize Marine Technology Society & 0 USD \\
+         \footnotesize - Student Poster Presentation - 1st place &\footnotesize Bays and Bayous & 350 USD \\
+         \footnotesize - Student Travel Award &\footnotesize UNESCO IGCP 639	& 200 USD \\
+         \footnotesize - Funded Research Proposal &\footnotesize Marine Technology Society & 200 USD \\
+        
+    \end{tabular*}
+\end{table}
+
+\begin{table}[h]
+    \hrule
+    \vspace{1em}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.4\textwidth}p{0.4\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Education} \\
+    \end{tabular*}
+    \centering
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.85\textwidth}p{0.15\textwidth}}
+        \textbf{Doctor of Philosophy - PhD, Geoscience}, University of Toronto [withdrawn] & 2018 - 2019\\
+        \textbf{Master of Science - MS, Oceanography}, U. of S. Mississippi at NASA Stennis Space Center& 2015 - 2017\\
+        \textbf{Bachelor of Science - BS, Earth and Environmental Sciences}, McMaster University & 2009-2013 \\
+    \end{tabular*}
+    \vspace{1em}
+    \hrule
+    \vspace{1em}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.4\textwidth}p{0.4\textwidth}p{0.2\textwidth}}
+        \Large \textbf{Software Things} \\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright \small   \textbf{Concepts}\\
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.25\textwidth}p{0.15\textwidth}p{0.35\textwidth}p{0.25\textwidth}}
+        \small Backend architecture design & 
+        \small API Design & 
+        \small Non- and Relational database design & 
+        \small Automation design 
+    \end{tabular*}
+    \vspace{1.5em}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright \small   \textbf{Products}\\
+    \end{tabular*}
+    \vspace{-0.5em}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}}
+        \textbf{AWS:}&
+        \small AIM &
+        \small API Gateway &
+        \small AppConfig &
+        \small Athena & 
+        \small Cognito &
+        \small CodeBuild &
+        \small CodePipeline \\
+        \small Cloudfront &
+        \small CDK & 
+        \small DocumentDb &
+        \small DynamoDb & 
+        \small EC2 &
+        \small ECS &
+        \small EFS & 
+        \small IAM \\
+        \small Glue &
+        \small Lambda &
+        \small Param Store & 
+        \small Route 53 &
+        \small RDS & 
+        \small Redshift &
+        \small S3 & 
+        \small SSM \\
+        \small SNS & 
+        \textbf{Docker:} &
+        \small Compose &
+        \small Sentry &
+        \small SQL &
+        \small NoSQL &
+        \textbf{Observability:} &
+        \small DataDog \\
+        \small Grafana &
+        \small Prometheus &
+        \small Segment &
+        \textbf{Linux:} &
+        \small Ubuntu & 
+        \small Amazon &
+        \textbf{VCS:} & 
+        \small git \\
+        \small BitBucket & 
+        \small GitHub &
+        \small GitLab \\
+        \\
+    \end{tabular*}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{1\textwidth}}
+        \raggedright \small   \textbf{Languages}\\
+    \end{tabular*}
+    \vspace{-0.5em}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}}
+        \small Python &
+        \small Typescript &
+        \small JavaScript &
+        \small Bash &
+        \small LaTeX &
+        \small Polish \\
+
+    \end{tabular*}
+
+    \vspace{10em}
+\end{table}
+\vspace{10em}
+\end{document}
